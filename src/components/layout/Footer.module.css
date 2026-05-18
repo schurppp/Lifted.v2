@@ -1,0 +1,15 @@
+.footer { background: var(--color-navy); color: #94A3B8; margin-top: auto; }
+.inner  { max-width: var(--max-width); margin: 0 auto; padding: var(--space-12) var(--space-6); display: flex; gap: var(--space-12); flex-wrap: wrap; }
+
+.brand    { flex: 0 0 220px; }
+.logo     { font-family: var(--font-headline); font-size: var(--text-xl); font-weight: 800; color: var(--color-lime); }
+.tagline  { margin-top: var(--space-3); font-size: var(--text-sm); color: #64748B; line-height: 1.6; }
+
+.links    { display: flex; gap: var(--space-8); flex-wrap: wrap; flex: 1; }
+.col      { display: flex; flex-direction: column; gap: var(--space-2); min-width: 120px; }
+.colTitle { font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #64748B; margin-bottom: var(--space-1); }
+.col a    { font-size: var(--text-sm); color: #94A3B8; transition: color var(--transition); }
+.col a:hover { color: #fff; }
+
+.bottom { border-top: 1px solid rgba(255,255,255,0.06); padding: var(--space-4) var(--space-6); text-align: center; }
+.bottom p { font-size: var(--text-xs); color: #475569; }

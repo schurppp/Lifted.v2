@@ -1,0 +1,2 @@
+.page      { padding: var(--space-8) 0 var(--space-16); background: var(--color-bg); min-height: calc(100vh - 60px); }
+.container { max-width: 680px; margin: 0 auto; padding: 0 var(--space-6); }

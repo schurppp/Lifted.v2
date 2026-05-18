@@ -1,0 +1,105 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+  background: var(--color-navy);
+}
+
+.content {
+  text-align: center;
+  max-width: 500px;
+}
+
+/* ── 404 Number Display ── */
+.code {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  line-height: 1;
+}
+
+.four,
+.zero {
+  font-family: var(--font-headline);
+  font-size: clamp(5rem, 15vw, 8rem);
+  font-weight: 800;
+  display: block;
+  animation: float 3s ease-in-out infinite;
+}
+
+.four {
+  color: var(--color-lime);
+}
+
+.zero {
+  color: var(--color-orange);
+  animation-delay: 0.3s;
+}
+
+.four:last-child {
+  animation-delay: 0.6s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+/* ── Text ── */
+.title {
+  font-family: var(--font-headline);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-white);
+  margin: 0 0 var(--space-3);
+}
+
+.text {
+  color: var(--color-slate);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 var(--space-8);
+}
+
+/* ── Actions ── */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-10);
+}
+
+/* ── Quick Links ── */
+.quickLinksLabel {
+  font-size: 0.875rem;
+  color: var(--color-slate);
+  margin: 0 0 var(--space-3);
+}
+
+.linkGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+}
+
+.quickLink {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-full);
+  padding: var(--space-2) var(--space-4);
+  color: var(--color-slate);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: var(--font-body);
+}
+
+.quickLink:hover {
+  border-color: var(--color-lime);
+  color: var(--color-white);
+}

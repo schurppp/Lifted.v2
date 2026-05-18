@@ -1,0 +1,319 @@
+.page {
+  min-height: 100vh;
+  padding: var(--space-8) 0 var(--space-16);
+}
+
+.pageHeader {
+  margin-bottom: var(--space-8);
+}
+
+.title {
+  font-family: var(--font-headline);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-white);
+  margin: 0 0 var(--space-2);
+}
+
+.subtitle {
+  color: var(--color-slate);
+  font-size: 0.95rem;
+}
+
+.subtitle strong {
+  color: var(--color-lime);
+}
+
+/* ── KPI Grid ── */
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+@media (max-width: 768px) {
+  .kpiGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.kpiCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  position: relative;
+  overflow: hidden;
+}
+
+.kpiCard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+}
+
+.kpi_lime::before { background: var(--color-lime); }
+.kpi_orange::before { background: var(--color-orange); }
+.kpi_teal::before { background: var(--color-teal); }
+.kpi_green::before { background: var(--color-green); }
+
+.kpiIcon {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-1);
+}
+
+.kpiValue {
+  font-family: var(--font-headline);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-white);
+  line-height: 1;
+}
+
+.kpiLabel {
+  color: var(--color-white);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.kpiSublabel {
+  color: var(--color-slate);
+  font-size: 0.75rem;
+}
+
+/* ── Week Goal Card ── */
+.weekCard {
+  margin-bottom: var(--space-4);
+}
+
+.weekHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3);
+}
+
+.weekTitle {
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.weekHint {
+  margin-top: var(--space-2);
+  font-size: 0.875rem;
+  color: var(--color-slate);
+}
+
+/* ── Heatmap ── */
+.heatmapCard {
+  margin-bottom: var(--space-6);
+}
+
+.sectionTitle {
+  font-family: var(--font-headline);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 var(--space-4);
+}
+
+.heatmap {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: space-between;
+}
+
+.heatmapDay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  flex: 1;
+}
+
+.heatmapDot {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: transform var(--transition-fast);
+}
+
+.heatmapDotDone {
+  background: var(--color-lime);
+  color: var(--color-navy);
+}
+
+.heatmapDotEmpty {
+  background: var(--color-surface-2);
+  color: var(--color-slate);
+  border: 1px solid var(--color-line);
+}
+
+.heatmapLabel {
+  font-size: 0.75rem;
+  color: var(--color-slate);
+}
+
+/* ── Bottom Grid ── */
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+@media (max-width: 768px) {
+  .bottomGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Log List ── */
+.historyCard,
+.learningCard {
+  min-height: 200px;
+}
+
+.emptyHint {
+  color: var(--color-slate);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: var(--space-8) 0;
+}
+
+.logList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.logItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-line);
+  font-size: 0.875rem;
+}
+
+.logItem:last-child {
+  border-bottom: none;
+}
+
+.logDate {
+  color: var(--color-slate);
+  width: 36px;
+  flex-shrink: 0;
+}
+
+.logPlan {
+  color: var(--color-white);
+  font-weight: 500;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.logDay {
+  color: var(--color-slate);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+/* ── Learning Module List ── */
+.moduleList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.moduleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.moduleEmoji {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.moduleInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.moduleTitle {
+  font-size: 0.875rem;
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.modulePercent {
+  font-size: 0.8rem;
+  color: var(--color-lime);
+  font-weight: 600;
+  width: 36px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* ── Plans Card ── */
+.plansCard {
+  margin-top: var(--space-2);
+}
+
+.planGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+@media (max-width: 600px) {
+  .planGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.planItem {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  transition: border-color var(--transition-fast);
+}
+
+.planItemActive {
+  border-color: var(--color-lime);
+  background: rgba(183, 240, 0, 0.05);
+}
+
+.planName {
+  font-weight: 600;
+  color: var(--color-white);
+  font-size: 0.95rem;
+}
+
+.planMeta {
+  font-size: 0.8rem;
+  color: var(--color-slate);
+}

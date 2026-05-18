@@ -1,0 +1,117 @@
+/* ModuleInfoPage.module.css – geteilte Styles für alle 3 Modul-Infoseiten */
+
+.page { background: var(--color-navy); }
+
+/* ── HERO ────────────────────────────────────────────────────── */
+.hero {
+  background: var(--color-navy);
+  padding: var(--space-16) 0 var(--space-12);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: var(--space-6);
+  padding-right: var(--space-6);
+}
+
+.heroInner   { display: flex; flex-direction: column; gap: var(--space-5); }
+.moduleTag   { display: inline-block; font-size: var(--text-xs); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 4px 12px; border-radius: var(--radius-full); background: rgba(183,240,0,0.12); color: var(--color-lime); border: 1px solid rgba(183,240,0,0.2); align-self: flex-start; }
+.heroTitle   { font-family: var(--font-headline); font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #fff; line-height: 1.1; margin: 0; }
+.heroAccent  { font-style: normal; color: var(--color-lime); }
+.heroSub     { font-size: var(--text-lg); color: #94A3B8; line-height: 1.7; max-width: 480px; }
+.heroCtas    { display: flex; align-items: center; gap: var(--space-4); flex-wrap: wrap; }
+.loginLink   { font-size: var(--text-sm); color: #94A3B8; text-decoration: none; }
+.loginLink:hover { color: #fff; }
+
+/* Hero-Visuals */
+.heroVisual  { display: flex; justify-content: center; }
+
+/* Training Plan Preview */
+.planPreview { background: #111827; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,.1); width: 100%; max-width: 300px; overflow: hidden; }
+.planHeader  { background: #1F2937; padding: var(--space-4); display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,.06); }
+.planTag     { font-size: 10px; color: #6B7280; font-weight: 600; }
+.planName    { font-size: var(--text-sm); color: var(--color-lime); font-weight: 700; }
+.planDay     { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-3) var(--space-4); border-bottom: 1px solid rgba(255,255,255,.04); }
+.planDayRest { opacity: 0.4; }
+.planDayLabel { font-size: var(--text-xs); font-weight: 700; color: #6B7280; width: 24px; }
+.planDayName  { font-size: var(--text-sm); color: #fff; flex: 1; }
+.planDayDone  { color: var(--color-lime); font-size: var(--text-sm); font-weight: 700; }
+
+/* Meals Preview */
+.mealPreview { background: #111827; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,.1); width: 100%; max-width: 300px; padding: var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); }
+.mealPreviewHeader { padding-bottom: var(--space-2); border-bottom: 1px solid rgba(255,255,255,.06); }
+.macroRow    { display: flex; gap: var(--space-3); }
+.macroItem   { flex: 1; text-align: center; }
+.macroVal    { display: block; font-family: var(--font-headline); font-size: var(--text-xl); font-weight: 800; color: #fff; }
+.macroKey    { font-size: 10px; color: #6B7280; }
+.mealPreviewLabel { font-size: 10px; color: #6B7280; font-weight: 600; padding-top: var(--space-1); }
+.mealItem    { background: #1F2937; border-radius: 6px; padding: var(--space-2) var(--space-3); font-size: var(--text-sm); color: #94A3B8; }
+
+/* Learning Preview */
+.learningPreview { display: flex; flex-direction: column; gap: var(--space-3); width: 100%; max-width: 320px; }
+.learningModuleCard   { background: #111827; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,.08); border-top-width: 3px; padding: var(--space-4); }
+.learningModuleHeader { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2); }
+.learningModuleIcon   { width: 32px; height: 32px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: var(--text-sm); flex-shrink: 0; }
+.learningModuleName   { font-weight: 700; color: #fff; font-size: var(--text-sm); }
+.learningTopics { display: flex; flex-wrap: wrap; gap: var(--space-1); }
+.learningTopic  { font-size: 10px; color: #94A3B8; background: rgba(255,255,255,.06); padding: 2px 8px; border-radius: var(--radius-full); }
+
+/* ── CONTAINER ──────────────────────────────────────────────── */
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 var(--space-6); }
+
+/* ── SECTION LABELS ─────────────────────────────────────────── */
+.sectionEye   { font-size: var(--text-xs); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--color-lime); margin-bottom: var(--space-2); }
+.sectionTitle { font-family: var(--font-headline); font-size: var(--text-2xl); font-weight: 800; color: #fff; margin-bottom: var(--space-8); }
+
+/* ── FLOW SECTION ───────────────────────────────────────────── */
+.flowSection { background: #0D1524; padding: var(--space-16) 0; border-top: 1px solid rgba(255,255,255,.06); }
+.flowSteps   { display: flex; flex-direction: column; gap: var(--space-5); max-width: 580px; margin-bottom: var(--space-6); }
+.flowStep    { display: flex; gap: var(--space-5); align-items: flex-start; }
+.flowNum     { width: 40px; height: 40px; border-radius: 50%; background: rgba(183,240,0,0.15); color: var(--color-lime); font-weight: 800; font-size: var(--text-md); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.flowLabel   { font-weight: 700; font-size: var(--text-md); color: #fff; margin-bottom: 4px; }
+.flowDesc    { font-size: var(--text-sm); color: #94A3B8; line-height: 1.6; }
+.flowNote    { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4); background: rgba(183,240,0,0.06); border: 1px solid rgba(183,240,0,0.15); border-radius: var(--radius-md); font-size: var(--text-sm); color: #94A3B8; max-width: 580px; }
+.flowNoteBadge { font-size: var(--text-xs); font-weight: 700; background: rgba(183,240,0,0.15); color: var(--color-lime); padding: 3px 10px; border-radius: var(--radius-full); flex-shrink: 0; }
+
+/* ── TAGS SECTION ───────────────────────────────────────────── */
+.tagsSection { background: var(--color-navy); padding: var(--space-12) 0; }
+.tagCloud    { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+.tag         { background: rgba(15,118,110,0.15); color: #2DD4BF; border: 1px solid rgba(15,118,110,0.3); padding: 6px 16px; border-radius: var(--radius-full); font-size: var(--text-sm); font-weight: 600; }
+
+/* ── FEATURES SECTION ───────────────────────────────────────── */
+.featuresSection { background: var(--color-navy); padding: var(--space-16) 0; }
+.featuresGrid    { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-5); }
+.featureCard     { background: var(--color-surface); border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,.08); padding: var(--space-6); }
+.featureCardTeal { border-top: 3px solid rgba(15,118,110,0.5); }
+.featureIcon     { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: var(--radius-sm); background: rgba(183,240,0,0.12); color: var(--color-lime); font-weight: 800; font-size: var(--text-sm); margin-bottom: var(--space-3); }
+.featureTitle    { font-family: var(--font-headline); font-size: var(--text-lg); font-weight: 700; color: #fff; margin-bottom: var(--space-2); }
+.featureDesc     { font-size: var(--text-sm); color: #94A3B8; line-height: 1.6; }
+
+/* ── MODULES SECTION (Learning) ─────────────────────────────── */
+.modulesSection  { background: #0D1524; padding: var(--space-16) 0; border-top: 1px solid rgba(255,255,255,.06); }
+.modulesGrid     { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5); }
+.moduleCard      { background: var(--color-surface); border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,.08); border-top-width: 4px; padding: var(--space-6); }
+.moduleCardIcon  { width: 44px; height: 44px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: var(--text-lg); margin-bottom: var(--space-3); }
+.moduleCardTitle { font-family: var(--font-headline); font-size: var(--text-lg); font-weight: 700; color: #fff; margin-bottom: var(--space-3); }
+.moduleCardList  { list-style: none; display: flex; flex-direction: column; gap: var(--space-2); }
+.moduleCardList li { font-size: var(--text-sm); color: #94A3B8; padding-left: var(--space-4); position: relative; }
+.moduleCardList li::before { content: '›'; position: absolute; left: 0; color: var(--color-lime); font-weight: 700; }
+
+/* ── CTA SECTION ────────────────────────────────────────────── */
+.ctaSection  { background: var(--color-navy); padding: var(--space-20) 0; text-align: center; border-top: 1px solid rgba(255,255,255,.06); }
+.ctaTitle    { font-family: var(--font-headline); font-size: var(--text-3xl); color: #fff; margin-bottom: var(--space-3); font-weight: 800; }
+.ctaSub      { font-size: var(--text-lg); color: #94A3B8; margin-bottom: var(--space-8); }
+
+/* ── RESPONSIVE ─────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .hero          { grid-template-columns: 1fr; }
+  .heroVisual    { display: none; }
+  .featuresGrid  { grid-template-columns: 1fr; }
+  .modulesGrid   { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .heroCtas { flex-direction: column; align-items: flex-start; }
+  .flowNote { flex-direction: column; align-items: flex-start; }
+}
