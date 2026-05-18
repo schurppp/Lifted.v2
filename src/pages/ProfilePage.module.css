@@ -1,0 +1,426 @@
+.page {
+  min-height: 100vh;
+  padding: var(--space-8) 0 var(--space-20);
+}
+
+/* ── Page Header ── */
+.pageHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--color-lime);
+  color: var(--color-navy);
+  font-family: var(--font-headline);
+  font-size: 1.75rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.name {
+  font-family: var(--font-headline);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-white);
+  margin: 0 0 var(--space-1);
+}
+
+.tagline {
+  color: var(--color-slate);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ── Section Cards ── */
+.section {
+  margin-bottom: var(--space-4);
+}
+
+.sectionTitle {
+  font-family: var(--font-headline);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0 0 var(--space-4);
+}
+
+/* ── Chip Grid (Goals, Equipment, Diet) ── */
+.chipGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.chip {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-full);
+  padding: var(--space-2) var(--space-4);
+  color: var(--color-slate);
+  font-size: 0.875rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  transition: all var(--transition-fast);
+  font-family: var(--font-body);
+}
+
+.chip:hover {
+  border-color: var(--color-lime);
+  color: var(--color-white);
+}
+
+.chipActive {
+  background: var(--color-lime);
+  border-color: var(--color-lime);
+  color: var(--color-navy);
+  font-weight: 600;
+}
+
+/* ── Level Cards ── */
+.levelGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+
+@media (max-width: 600px) {
+  .levelGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.levelCard {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  transition: all var(--transition-fast);
+  font-family: var(--font-body);
+}
+
+.levelCard:hover {
+  border-color: var(--color-lime);
+}
+
+.levelCardActive {
+  border-color: var(--color-lime);
+  background: rgba(183, 240, 0, 0.08);
+}
+
+.levelLabel {
+  font-weight: 600;
+  color: var(--color-white);
+  font-size: 0.95rem;
+}
+
+.levelDesc {
+  font-size: 0.8rem;
+  color: var(--color-slate);
+}
+
+/* ── Training Days ── */
+.daysRow {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.dayBtn {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-line);
+  color: var(--color-slate);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: var(--font-body);
+}
+
+.dayBtn:hover {
+  border-color: var(--color-lime);
+  color: var(--color-white);
+}
+
+.dayBtnActive {
+  background: var(--color-lime);
+  border-color: var(--color-lime);
+  color: var(--color-navy);
+}
+
+/* ── Save Actions ── */
+.actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.savedBanner {
+  background: rgba(183, 240, 0, 0.15);
+  border: 1px solid var(--color-lime);
+  color: var(--color-lime);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-6);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* ── Danger Zone ── */
+.dangerZone {
+  border-color: rgba(249, 115, 22, 0.3) !important;
+}
+
+.dangerTitle {
+  font-family: var(--font-headline);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-orange);
+  margin: 0 0 var(--space-2);
+}
+
+.dangerText {
+  color: var(--color-slate);
+  font-size: 0.875rem;
+  margin: 0 0 var(--space-4);
+}
+
+/* ── Field label (shared) ── */
+.fieldLabel {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-slate);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-2);
+}
+
+/* ── Section-level save row ── */
+.sectionActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.savedInline {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-lime);
+}
+
+.errorMsg {
+  font-size: 0.875rem;
+  color: #F87171;
+  margin: 0;
+}
+
+.fieldHint {
+  font-size: 0.8rem;
+  color: #F87171;
+  margin: var(--space-1) 0 0;
+}
+
+/* ── Inline name edit ── */
+.inlineView {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.inlineValue {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.editBtn {
+  background: none;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-full);
+  padding: var(--space-1) var(--space-3);
+  font-size: 0.8rem;
+  color: var(--color-slate);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: var(--font-body);
+}
+
+.editBtn:hover {
+  border-color: var(--color-lime);
+  color: var(--color-lime);
+}
+
+.inlineEdit {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.inlineActions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+/* ── Text / password inputs ── */
+.textInput {
+  width: 100%;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-white);
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  outline: none;
+  transition: border-color var(--transition-fast);
+  box-sizing: border-box;
+}
+
+.textInput:focus {
+  border-color: var(--color-lime);
+}
+
+.inputError {
+  border-color: #EF4444;
+}
+
+/* ── Body data row ── */
+.bodyRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 600px) {
+  .bodyRow { grid-template-columns: 1fr 1fr; }
+}
+
+.bodyField {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.inputWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.numInput {
+  width: 100%;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-3);
+  padding-right: var(--space-10);
+  color: var(--color-white);
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color var(--transition-fast);
+  -moz-appearance: textfield;
+}
+
+.numInput::-webkit-inner-spin-button,
+.numInput::-webkit-outer-spin-button { -webkit-appearance: none; }
+
+.numInput:focus { border-color: var(--color-teal); }
+
+.inputUnit {
+  position: absolute;
+  right: var(--space-3);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-slate);
+  pointer-events: none;
+}
+
+/* ── Activity level grid ── */
+.activityGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: var(--space-2);
+}
+
+.activityCard {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: all var(--transition-fast);
+  font-family: var(--font-body);
+}
+
+.activityCard:hover { border-color: var(--color-teal); }
+
+.activityCardActive {
+  border-color: var(--color-teal);
+  background: rgba(15, 118, 110, 0.1);
+}
+
+.activityLabel {
+  font-weight: 600;
+  color: var(--color-white);
+  font-size: 0.875rem;
+}
+
+.activityDesc {
+  font-size: 0.75rem;
+  color: var(--color-slate);
+}
+
+/* ── Password fields ── */
+.pwField {
+  margin-bottom: var(--space-4);
+}
+
+.pwWrap {
+  position: relative;
+}
+
+.pwWrap .textInput {
+  padding-right: 4rem;
+}
+
+.showToggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--color-slate);
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--font-body);
+  letter-spacing: 0.05em;
+}

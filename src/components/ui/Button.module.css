@@ -1,0 +1,49 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border-color var(--transition), opacity var(--transition);
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn:disabled { opacity: 0.55; cursor: not-allowed; }
+.btn--full { width: 100%; }
+
+/* Größen */
+.btn--sm  { padding: 6px 12px;  font-size: var(--text-sm); }
+.btn--md  { padding: 10px 20px; font-size: var(--text-md); }
+.btn--lg  { padding: 14px 28px; font-size: var(--text-lg); }
+
+/* Primär: Lift Orange */
+.btn--primary { background: var(--color-orange); color: #fff; }
+.btn--primary:hover:not(:disabled) { background: #ea6c0a; }
+
+/* Sekundär: Deep Teal */
+.btn--secondary { background: var(--color-teal); color: #fff; }
+.btn--secondary:hover:not(:disabled) { background: #0c5f58; }
+
+/* Ghost: Outline – sichtbar auf dunklem Hintergrund */
+.btn--ghost { background: transparent; color: #CBD5E1; border-color: rgba(255,255,255,0.15); }
+.btn--ghost:hover:not(:disabled) { background: rgba(255,255,255,0.08); color: #fff; }
+
+/* Danger */
+.btn--danger { background: #dc2626; color: #fff; }
+.btn--danger:hover:not(:disabled) { background: #b91c1c; }
+
+/* Lade-Spinner */
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }

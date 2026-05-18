@@ -1,0 +1,34 @@
+.page       { padding: var(--space-8) 0 var(--space-16); background: var(--color-bg); min-height: calc(100vh - 60px); }
+.container  { max-width: 800px; margin: 0 auto; padding: 0 var(--space-6); display: flex; flex-direction: column; gap: var(--space-6); }
+.header     { }
+.title      { font-family: var(--font-headline); font-size: var(--text-3xl); font-weight: 800; }
+.sub        { font-size: var(--text-md); color: #94A3B8; margin-top: var(--space-1); }
+
+.planSelector  { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+.planTab       { padding: var(--space-4); border: 2px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); cursor: pointer; text-align: left; transition: all var(--transition); display: flex; flex-direction: column; gap: 3px; min-width: 140px; }
+.planTab:hover { border-color: var(--color-lime); }
+.planTabActive { border-color: var(--color-lime); background: rgba(183,240,0,.06); }
+.planShort  { font-size: var(--text-2xl); font-weight: 800; font-family: var(--font-headline); color: var(--color-lime); filter: drop-shadow(0 0 4px rgba(183,240,0,.3)); }
+.planName   { font-weight: 700; font-size: var(--text-md); }
+.planMeta   { font-size: var(--text-xs); color: #94A3B8; }
+
+.planInfo   { padding: var(--space-4); background: var(--color-surface); border-radius: var(--radius-md); border: 1px solid var(--color-border); }
+.planDesc   { font-size: var(--text-md); line-height: 1.6; }
+.planMeta2  { font-size: var(--text-sm); color: #94A3B8; margin-top: var(--space-2); }
+
+.weekNav    { display: grid; grid-template-columns: repeat(7, 1fr); gap: var(--space-2); }
+.weekDay    { padding: var(--space-2); border-radius: var(--radius-sm); border: 1px solid var(--color-border); text-align: center; background: var(--color-surface); display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.weekDayToday { border-color: var(--color-lime); background: rgba(183,240,0,.08); }
+.weekDayRest  { opacity: 0.5; }
+.weekDayLabel { font-size: var(--text-xs); font-weight: 700; color: #94A3B8; }
+.todayDot   { width: 6px; height: 6px; border-radius: 50%; background: var(--color-lime); }
+.weekDayType  { font-size: 9px; color: #94A3B8; text-align: center; }
+
+.dayCards   { display: flex; flex-direction: column; gap: var(--space-4); }
+.dayCardWrap { display: flex; flex-direction: column; gap: var(--space-2); }
+.dayLabel   { font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #94A3B8; }
+
+@media (max-width: 600px) {
+  .weekNav { grid-template-columns: repeat(7, 1fr); gap: 4px; }
+  .weekDayType { display: none; }
+}

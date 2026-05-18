@@ -1,0 +1,35 @@
+.wrap     { display: flex; flex-direction: column; gap: var(--space-5); }
+
+.greeting      { }
+.greetingTitle { font-family: var(--font-headline); font-size: var(--text-3xl); font-weight: 800; }
+.date          { font-size: var(--text-md); color: var(--color-text-muted); margin-top: var(--space-1); }
+
+.statsRow  { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); }
+.statCard  { text-align: center; }
+.statValue { font-family: var(--font-headline); font-size: var(--text-3xl); font-weight: 800; line-height: 1; }
+.statLabel { font-size: var(--text-xs); color: var(--color-text-muted); margin-top: var(--space-1); }
+
+.sectionLabel { font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-muted); margin-bottom: var(--space-3); }
+
+.restDay   { display: flex; align-items: center; gap: var(--space-4); }
+.restIcon  { font-size: 2rem; }
+.restTitle { font-weight: 700; font-size: var(--text-lg); }
+.restDesc  { font-size: var(--text-sm); color: var(--color-text-muted); margin-top: 4px; }
+
+.todaySession  { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); }
+.sessionTitle  { font-family: var(--font-headline); font-weight: 700; font-size: var(--text-xl); }
+.sessionMeta   { font-size: var(--text-sm); color: var(--color-text-muted); margin-top: 4px; }
+.sessionExCount{ font-size: var(--text-sm); color: var(--color-teal); margin-top: 4px; font-weight: 600; }
+.startBtn { background: var(--color-orange); color: #fff; padding: 10px 18px; border-radius: var(--radius-sm); font-weight: 700; font-size: var(--text-sm); white-space: nowrap; flex-shrink: 0; transition: background var(--transition); }
+.startBtn:hover { background: #ea6c0a; }
+
+.quickLinks { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); }
+.quickLink  { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-4); border-radius: var(--radius-md); border: 1px solid; font-size: var(--text-sm); font-weight: 600; transition: opacity var(--transition); text-align: center; }
+.quickLink:hover { opacity: 0.8; }
+.quickLink span:first-child { font-size: 1.5rem; }
+
+@media (max-width: 480px) {
+  .greetingTitle { font-size: var(--text-2xl); }
+  .statsRow      { grid-template-columns: repeat(3, 1fr); gap: var(--space-2); }
+  .statValue     { font-size: var(--text-2xl); }
+}

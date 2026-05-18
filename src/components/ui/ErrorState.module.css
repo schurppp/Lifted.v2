@@ -1,0 +1,4 @@
+.wrap    { display: flex; flex-direction: column; align-items: center; text-align: center; padding: var(--space-10) var(--space-6); gap: var(--space-3); background: rgba(220,38,38,0.1); border-radius: var(--radius-md); border: 1px solid rgba(220,38,38,0.3); }
+.icon    { font-size: 2rem; }
+.title   { font-size: var(--text-lg); font-weight: 700; color: #FCA5A5; }
+.message { font-size: var(--text-sm); color: #FDA4AF; max-width: 360px; line-height: 1.6; }
