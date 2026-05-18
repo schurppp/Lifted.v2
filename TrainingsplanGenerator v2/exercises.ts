@@ -40,28 +40,28 @@ const exercises: Exercise[] = [
     // =========================
     // ARME
     // =========================
-    { name: "Bizepscurls", primaryMuscle: "Bizeps", type: "isolation", injuryRisk: [] },
-    { name: "Hammer Curls", primaryMuscle: "Bizeps", type: "isolation", injuryRisk: [] },
-    { name: "Overheadpress", primaryMuscle: "Trizeps", type: "isolation", injuryRisk: [] },
-    { name: "Trizepsdrücken", primaryMuscle: "Trizeps", type: "isolation", injuryRisk: [] },
+    { name: "Bizepscurls", primaryMuscle: "Bizeps", type: "isolation", injuryRisk: ["Bizeps"] },
+    { name: "Hammer Curls", primaryMuscle: "Bizeps", type: "isolation", injuryRisk: ["Bizeps"] },
+    { name: "Overheadpress", primaryMuscle: "Trizeps", type: "isolation", injuryRisk: ["Trizeps"] },
+    { name: "Trizepsdrücken", primaryMuscle: "Trizeps", type: "isolation", injuryRisk: ["Trizeps"] },
 
     // =========================
     // BEINE
     // =========================
     { name: "Kniebeugen", primaryMuscle: "Quadrizeps", type: "compound", injuryRisk: ["Knie"] },
-    { name: "Beinpresse", primaryMuscle: "Quadrizeps", type: "compound", injuryRisk: [] },
+    { name: "Beinpresse", primaryMuscle: "Quadrizeps", type: "compound", injuryRisk: ["Knie"] },
     { name: "Deadlift", primaryMuscle: "Lower_Back", type: "compound", injuryRisk: ["Back"] },
     { name: "Stif Leg Deadlift", primaryMuscle: "Lower_Back", type: "compound", injuryRisk: ["Back"] },
     { name: "Hip Thrust", primaryMuscle: "Glutes", type: "compound", injuryRisk: [] },
-    { name: "Beinstrecker", primaryMuscle: "RecktusFemoris", type: "compound", injuryRisk: [] },
+    { name: "Beinstrecker", primaryMuscle: "RecktusFemoris", type: "compound", injuryRisk: ["Knie"] },
     { name: "Beinbeuger", primaryMuscle: "Hamstrings", type: "isolation", injuryRisk: [] },
     { name: "Wadenheben", primaryMuscle: "Waden", type: "isolation", injuryRisk: [] },
 
     // =========================
     // CORE
     // =========================
-    { name: "Crunches", primaryMuscle: "Core", type: "isolation", injuryRisk: [] },
-    { name: "Plank", primaryMuscle: "Core", type: "isolation", injuryRisk: [] }
+    { name: "Crunches", primaryMuscle: "Core", type: "isolation", injuryRisk: ["Core"] },
+    { name: "Plank", primaryMuscle: "Core", type: "isolation", injuryRisk: ["Core"] }
 ];
 
 export default exercises;

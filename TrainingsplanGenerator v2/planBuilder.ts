@@ -61,6 +61,18 @@ export function buildPlan(user: any, splits: any[]) {
                 if (entry.split === "Pull" && meta.role === "Push") continue;
 
                 // =========================
+                // 2. INJURY FILTER
+                // =========================
+                if (
+                    ex.injuryRisk &&
+                    ex.injuryRisk.some((risk: string) =>
+                        user.injuries.indexOf(risk) !== -1
+                    )
+                ) {
+                    continue;
+                }
+
+                // =========================
                 // 3. VOLUME CONTROL
                 // =========================
                 const currentSets = muscleSets[muscle] || 0;
