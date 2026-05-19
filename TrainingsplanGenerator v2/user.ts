@@ -1,3 +1,5 @@
+import {InjuryRisk} from "./muscles";
+
 export class User {
 
     name: string;
@@ -19,7 +21,7 @@ export class User {
         trainingsziel: "Muskelaufbau" | "Fettverlust" | "Ausdauer",
         prioMuskelGruppe: string,
         prioMuskeln: string[],
-        injuries: string[] = [],
+        injuries: InjuryRisk[],
         level: "anfänger" | "fortgeschritten" | "pro",
         alter: number,
         geschlecht: "männlich" | "weiblich" | "divers"

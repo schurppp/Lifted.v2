@@ -105,6 +105,20 @@ export const muscleMap = {
     Adducktor: "Adductor"
 } as const;
 
+export const Injuries = {
+    Schulter: "Schulter",
+    Knie: "Knie",
+    Lower_Back: "Lower_Back",
+    Ellenbogen: "Ellenbogen",
+    Brust: "Brust",
+    Bizeps: "Bizeps",
+    Trizeps: "Trizeps",
+    Core: "Core"
+} as const;
+
+export type InjuryRisk =
+    typeof Injuries[keyof typeof Injuries];
+
 // =========================
 // TYPESAFE KEY FIX
 // =========================

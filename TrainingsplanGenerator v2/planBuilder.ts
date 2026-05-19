@@ -65,7 +65,7 @@ export function buildPlan(user: any, splits: any[]) {
                 // =========================
                 if (
                     ex.injuryRisk &&
-                    ex.injuryRisk.some((risk: string) =>
+                    ex.injuryRisk.some(risk =>
                         user.injuries.indexOf(risk) !== -1
                     )
                 ) {

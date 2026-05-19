@@ -2,6 +2,7 @@ import User from "./user";
 import { buildPlan } from "./planBuilder";
 
 import { getSplits } from "./splitEngine";
+import {Injuries} from "./muscles";
 
 const user = new User(
     "Ben",
@@ -9,7 +10,7 @@ const user = new User(
     "Muskelaufbau",
     "Oberkörper",
     [],
-    ["Schulter"],
+    [],
     "anfänger",
     25,
     "männlich"
