@@ -1,0 +1,268 @@
+[
+  {
+    "id": 0,
+    "title": "Haferflocken mit Beeren & Mandelbutter",
+    "tags": ["breakfast", "vegetarian", "vegan"],
+    "ingredients": [
+      "80g Haferflocken",
+      "250ml Hafermilch",
+      "100g gemischte Beeren (frisch oder TK)",
+      "1 EL Mandelbutter",
+      "1 TL Honig",
+      "1 Prise Zimt"
+    ],
+    "instructions": "Haferflocken mit Hafermilch in einem Topf bei mittlerer Hitze unter Rühren ca. 5 Minuten köcheln lassen. In eine Schüssel füllen, mit Beeren und Mandelbutter toppen. Mit Honig und Zimt abschmecken.",
+    "calories": 480,
+    "macros": {
+      "protein": 14,
+      "carbs": 68,
+      "fat": 16
+    }
+  },
+  {
+    "id": 1,
+    "title": "Rührei mit Spinat & Vollkorntoast",
+    "tags": ["breakfast", "vegetarian"],
+    "ingredients": [
+      "3 Eier",
+      "80g frischer Spinat",
+      "2 Scheiben Vollkornbrot",
+      "1 TL Butter",
+      "Salz, Pfeffer",
+      "1 Prise Muskatnuss"
+    ],
+    "instructions": "Butter in einer Pfanne erhitzen. Spinat kurz andünsten bis er zusammenfällt. Eier verquirlen, würzen und über den Spinat geben. Langsam unter Rühren stocken lassen. Mit geröstetem Vollkorntoast servieren.",
+    "calories": 430,
+    "macros": {
+      "protein": 28,
+      "carbs": 34,
+      "fat": 18
+    }
+  },
+  {
+    "id": 2,
+    "title": "Griechischer Joghurt Bowl",
+    "tags": ["breakfast", "vegetarian"],
+    "ingredients": [
+      "200g griechischer Joghurt (2% Fett)",
+      "30g Granola",
+      "1 Banane",
+      "1 EL Chia-Samen",
+      "1 TL Agavendicksaft"
+    ],
+    "instructions": "Joghurt in eine Schüssel geben. Banane in Scheiben schneiden und darauflegen. Mit Granola und Chia-Samen bestreuen. Mit Agavendicksaft abschließen.",
+    "calories": 390,
+    "macros": {
+      "protein": 20,
+      "carbs": 55,
+      "fat": 8
+    }
+  },
+  {
+    "id": 3,
+    "title": "Protein-Pancakes",
+    "tags": ["breakfast", "vegetarian"],
+    "ingredients": [
+      "2 Eier",
+      "1 reife Banane",
+      "30g Whey Protein (Vanilla)",
+      "50g Haferflocken",
+      "1 TL Backpulver",
+      "100ml Milch",
+      "Ahornsirup zum Servieren"
+    ],
+    "instructions": "Banane zerdrücken. Alle Zutaten zu einem glatten Teig verrühren. Portionsweise in einer beschichteten Pfanne mit wenig Öl bei mittlerer Hitze von beiden Seiten ca. 2–3 Minuten goldbraun backen. Mit Ahornsirup servieren.",
+    "calories": 510,
+    "macros": {
+      "protein": 36,
+      "carbs": 58,
+      "fat": 10
+    }
+  },
+  {
+    "id": 4,
+    "title": "Hähnchen-Reis-Bowl mit Gemüse",
+    "tags": ["lunch", "dinner"],
+    "ingredients": [
+      "150g Hähnchenbrustfilet",
+      "100g Basmatireis (roh)",
+      "1 Zucchini",
+      "1 rote Paprika",
+      "2 EL Olivenöl",
+      "Salz, Pfeffer, Paprikapulver, Knoblauchpulver"
+    ],
+    "instructions": "Reis nach Packungsanweisung kochen. Hähnchen in Streifen schneiden, mit Gewürzen marinieren und in Olivenöl scharf anbraten (je Seite 3–4 Minuten). Zucchini und Paprika würfeln und im selben Öl 5 Minuten anbraten. Alles zusammen in einer Bowl servieren.",
+    "calories": 620,
+    "macros": {
+      "protein": 48,
+      "carbs": 65,
+      "fat": 14
+    }
+  },
+  {
+    "id": 5,
+    "title": "Linsen-Curry mit Basmati",
+    "tags": ["lunch", "dinner", "vegetarian", "vegan"],
+    "ingredients": [
+      "200g rote Linsen",
+      "1 Dose Kokosmilch (400ml)",
+      "1 Dose gehackte Tomaten",
+      "1 Zwiebel",
+      "2 Knoblauchzehen",
+      "2 TL Currypulver",
+      "1 TL Kurkuma",
+      "100g Basmatireis (roh)",
+      "2 EL Kokosöl",
+      "Salz"
+    ],
+    "instructions": "Zwiebel und Knoblauch in Kokosöl anschwitzen. Gewürze kurz mitrösten. Linsen, Kokosmilch und Tomaten dazugeben, 20 Minuten köcheln lassen bis die Linsen weich sind. Mit Salz abschmecken. Parallel Reis kochen und zusammen servieren.",
+    "calories": 580,
+    "macros": {
+      "protein": 24,
+      "carbs": 78,
+      "fat": 18
+    }
+  },
+  {
+    "id": 6,
+    "title": "Thunfisch-Vollkorn-Wrap",
+    "tags": ["lunch", "snack"],
+    "ingredients": [
+      "1 Vollkorn-Wrap",
+      "1 Dose Thunfisch in Wasser (185g abgetropft)",
+      "2 EL fettarmer Frischkäse",
+      "50g Rucola",
+      "1/2 Gurke",
+      "1 TL Zitronensaft",
+      "Salz, Pfeffer"
+    ],
+    "instructions": "Frischkäse auf dem Wrap verteilen. Thunfisch abtropfen lassen und mit Zitronensaft, Salz und Pfeffer vermengen. Gurke in Scheiben schneiden. Alles auf dem Wrap verteilen, fest einrollen und diagonal halbieren.",
+    "calories": 380,
+    "macros": {
+      "protein": 38,
+      "carbs": 32,
+      "fat": 8
+    }
+  },
+  {
+    "id": 7,
+    "title": "Quinoa-Bowl mit geröstetem Gemüse & Feta",
+    "tags": ["lunch", "dinner", "vegetarian"],
+    "ingredients": [
+      "100g Quinoa (roh)",
+      "1 Süßkartoffel",
+      "1 rote Zwiebel",
+      "100g Kichererbsen (aus der Dose)",
+      "60g Feta",
+      "2 EL Olivenöl",
+      "1 TL Paprikapulver",
+      "Salz, Pfeffer",
+      "Frische Petersilie"
+    ],
+    "instructions": "Quinoa nach Packungsanweisung kochen. Süßkartoffel und Zwiebel würfeln, mit Kichererbsen auf einem Backblech mit Olivenöl und Gewürzen verteilen. Bei 200°C ca. 25 Minuten rösten. Mit Quinoa in einer Bowl anrichten, mit Feta und Petersilie toppen.",
+    "calories": 560,
+    "macros": {
+      "protein": 22,
+      "carbs": 72,
+      "fat": 18
+    }
+  },
+  {
+    "id": 8,
+    "title": "Lachs mit Brokkoli & Süßkartoffelpüree",
+    "tags": ["lunch", "dinner"],
+    "ingredients": [
+      "180g Lachsfilet",
+      "200g Süßkartoffeln",
+      "200g Brokkoli",
+      "1 EL Olivenöl",
+      "1 TL Butter",
+      "Zitronensaft, Salz, Pfeffer, Dill"
+    ],
+    "instructions": "Süßkartoffeln kochen und zu Püree stampfen, mit Butter und Salz abschmecken. Lachs mit Olivenöl, Salz, Pfeffer und Dill würzen, in einer Pfanne 3–4 Minuten je Seite braten. Brokkoli in Röschen teilen und 5 Minuten blanchieren. Alles zusammen anrichten, Lachs mit Zitrone beträufeln.",
+    "calories": 590,
+    "macros": {
+      "protein": 44,
+      "carbs": 48,
+      "fat": 22
+    }
+  },
+  {
+    "id": 9,
+    "title": "Gebratener Tofu mit Soba-Nudeln",
+    "tags": ["lunch", "dinner", "vegetarian", "vegan"],
+    "ingredients": [
+      "200g fester Tofu",
+      "100g Soba-Nudeln",
+      "2 EL Sojasoße",
+      "1 EL Sesamöl",
+      "1 EL Reisessig",
+      "1 TL Sriracha",
+      "2 Frühlingszwiebeln",
+      "1 TL Sesam",
+      "1 Knoblauchzehe"
+    ],
+    "instructions": "Tofu trocken tupfen und in Würfel schneiden, in einer Pfanne mit etwas Öl von allen Seiten knusprig anbraten. Soba-Nudeln nach Packungsanweisung kochen. Sojasoße, Sesamöl, Reisessig, Sriracha und Knoblauch zu einer Sauce verrühren. Nudeln, Tofu und Sauce vermengen, mit Frühlingszwiebeln und Sesam toppen.",
+    "calories": 520,
+    "macros": {
+      "protein": 26,
+      "carbs": 62,
+      "fat": 16
+    }
+  },
+  {
+    "id": 10,
+    "title": "Quark mit Nüssen & Apfel",
+    "tags": ["snack", "vegetarian"],
+    "ingredients": [
+      "200g Magerquark",
+      "1 Apfel",
+      "20g Walnüsse",
+      "1 TL Zimt",
+      "1 TL Honig"
+    ],
+    "instructions": "Quark in eine Schüssel geben. Apfel in kleine Würfel schneiden und dazugeben. Walnüsse grob hacken. Alles mit Zimt und Honig vermengen.",
+    "calories": 280,
+    "macros": {
+      "protein": 24,
+      "carbs": 28,
+      "fat": 8
+    }
+  },
+  {
+    "id": 11,
+    "title": "Reiskuchen mit Erdnussbutter & Banane",
+    "tags": ["snack", "vegetarian", "vegan"],
+    "ingredients": [
+      "3 Reiskuchen",
+      "2 EL Erdnussbutter (ohne Zuckerzusatz)",
+      "1 Banane"
+    ],
+    "instructions": "Reiskuchen mit Erdnussbutter bestreichen. Banane in Scheiben schneiden und darauflegen. Sofort servieren.",
+    "calories": 310,
+    "macros": {
+      "protein": 9,
+      "carbs": 44,
+      "fat": 11
+    }
+  },
+  {
+    "id": 12,
+    "title": "Hummus mit Gemüsesticks",
+    "tags": ["snack", "vegetarian", "vegan"],
+    "ingredients": [
+      "100g Hummus",
+      "1 Karotte",
+      "1/2 Gurke",
+      "1 rote Paprika",
+      "1 Stange Sellerie"
+    ],
+    "instructions": "Gemüse in Sticks schneiden. Mit Hummus zum Dippen servieren.",
+    "calories": 220,
+    "macros": {
+      "protein": 8,
+      "carbs": 26,
+      "fat": 9
+    }
+  }
+]
